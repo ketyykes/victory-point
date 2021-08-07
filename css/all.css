@@ -57,6 +57,10 @@ body {
   font-family: 'Noto Sans TC',PingFangSC-Regular,'Microsoft JhengHei', sans-serif;
 }
 
+.header {
+  width: 100%;
+}
+
 .header h1 {
   padding: 20px 10px;
   color: #29965f;
@@ -65,6 +69,7 @@ body {
 
 .header ul {
   background-color: #29965f;
+  letter-spacing: .3em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,8 +94,9 @@ body {
 }
 
 .footer {
+  width: 100%;
   font-weight: 900;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 20px;
   text-align: center;
   background-color: #29965f;
@@ -103,8 +109,8 @@ body {
 
 .greenPoint {
   margin: 0 auto;
-  width: 800px;
-  height: 450px;
+  width: 600px;
+  height: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,9 +120,22 @@ body {
           flex-direction: column;
 }
 
+@media (max-width: 768px) {
+  .greenPoint {
+    width: 300px;
+    height: 175px;
+  }
+}
+
 .topGreen {
   background-color: #29965f;
   height: 115px;
+}
+
+@media (max-width: 768px) {
+  .topGreen {
+    height: 57.5px;
+  }
 }
 
 .topWhite {
@@ -132,11 +151,24 @@ body {
           justify-content: center;
 }
 
+@media (max-width: 768px) {
+  .topWhite {
+    height: 30px;
+  }
+}
+
 .point {
   height: 15px;
   width: 15px;
   border-radius: 50%;
   background-color: #909a92;
+}
+
+@media (max-width: 768px) {
+  .point {
+    height: 7.5px;
+    width: 7.5px;
+  }
 }
 
 .wrapBottom {
@@ -151,8 +183,20 @@ body {
   background-color: #29965f;
 }
 
+@media (max-width: 768px) {
+  .leftGreen {
+    width: 80px;
+  }
+}
+
 .middleWhiteBottom {
   width: 60px;
+}
+
+@media (max-width: 768px) {
+  .middleWhiteBottom {
+    width: 30px;
+  }
 }
 
 .rightGreen {
@@ -172,15 +216,35 @@ body {
   width: 400px;
 }
 
+@media (max-width: 768px) {
+  .wrapCountIn {
+    width: 200px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
 .count1 {
   height: 60px;
   color: #d9dad5;
   background-color: #0f3938;
 }
 
+@media (max-width: 768px) {
+  .count1 {
+    height: 30px;
+  }
+}
+
 .in {
   color: #1d3331;
   background-color: #d9dad5;
   height: 60px;
+}
+
+@media (max-width: 768px) {
+  .in {
+    height: 30px;
+  }
 }
 /*# sourceMappingURL=all.css.map */

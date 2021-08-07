@@ -1,4 +1,7 @@
-
+@function division2($px){
+    $result :($px) / 2 ;
+    @return $result;
+}
 .content{
     padding-top: 60px;
     padding-bottom: 60px;
@@ -6,17 +9,27 @@
 
 .greenPoint{
     margin: 0 auto;
-    width: 800px;
-    height: 450px;
+    width: 600px;
+    height: 350px;
     display: flex;
     flex-direction: column;
+    @include tablet{
+        width: division2(600px);
+        height: division2(350px);
+    }
 }
 .topGreen{
     background-color: #29965f;
     height: 115px;
+    @include tablet{
+        height: division2(115px);
+    }
 }
 .topWhite{
     height: 60px;
+    @include tablet{
+        height: division2(60px);
+    }
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,6 +37,10 @@
 .point{
     height: 15px;
     width: 15px;
+    @include tablet{
+        height: division2(15px);
+        width: division2(15px);
+    }
     border-radius: 50%;
     background-color: #909a92;
 }
@@ -33,10 +50,16 @@
 }
 .leftGreen{
     width: 160px;
+    @include tablet{
+        width: division2(160px);
+    }
     background-color: #29965f;
 }
 .middleWhiteBottom{
     width: 60px;
+    @include tablet{
+     width: division2(60px);   
+    }
 }
 .rightGreen{
     position: relative;
@@ -52,18 +75,26 @@
     bottom: 0;
     left: 0;
     width: 400px;
-
+    @include tablet{
+        width: division2(400px);
+        font-size: division2(40px);
+        line-height: division2(60px);
+    }
 }
 .count1{
-   
     height: 60px;
+    @include tablet{
+     height: division2(60px);   
+    }
     color: #d9dad5;
     background-color: #0f3938;
 }
 .in{
-  
     color: #1d3331;
     background-color: #d9dad5;
     height: 60px;
+    @include tablet{
+        height: division2(60px);
+    }
 }
 
