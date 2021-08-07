@@ -1,0 +1,69 @@
+
+.content{
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.greenPoint{
+    margin: 0 auto;
+    width: 800px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+}
+.topGreen{
+    background-color: #29965f;
+    height: 115px;
+}
+.topWhite{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.point{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #909a92;
+}
+.wrapBottom{
+    display: flex;
+    height: 100%;
+}
+.leftGreen{
+    width: 160px;
+    background-color: #29965f;
+}
+.middleWhiteBottom{
+    width: 60px;
+}
+.rightGreen{
+    position: relative;
+    width: 100%;
+    background-color: #29965f;
+}
+.wrapCountIn{
+    font-size: 40px;
+    text-align: center;
+    line-height: 60px;
+    font-weight: 900;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 400px;
+
+}
+.count1{
+   
+    height: 60px;
+    color: #d9dad5;
+    background-color: #0f3938;
+}
+.in{
+  
+    color: #1d3331;
+    background-color: #d9dad5;
+    height: 60px;
+}
+
