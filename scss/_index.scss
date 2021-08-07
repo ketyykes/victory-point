@@ -2,12 +2,16 @@
     $result :($px) / 2 ;
     @return $result;
 }
+
 .content{
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
 .greenPoint{
+    border-radius: 4px;
+    background-color: #198964;
+    box-shadow: 4px 4px 32px -9px;
     margin: 0 auto;
     width: 600px;
     height: 350px;
@@ -19,7 +23,6 @@
     }
 }
 .topGreen{
-    background-color: #29965f;
     height: 115px;
     @include tablet{
         height: division2(115px);
@@ -27,6 +30,7 @@
 }
 .topWhite{
     height: 60px;
+    background-color: #fff;
     @include tablet{
         height: division2(60px);
     }
@@ -53,9 +57,9 @@
     @include tablet{
         width: division2(160px);
     }
-    background-color: #29965f;
 }
 .middleWhiteBottom{
+    background-color: #fff;
     width: 60px;
     @include tablet{
      width: division2(60px);   
@@ -64,7 +68,6 @@
 .rightGreen{
     position: relative;
     width: 100%;
-    background-color: #29965f;
 }
 .wrapCountIn{
     font-size: 40px;
@@ -87,7 +90,7 @@
      height: division2(60px);   
     }
     color: #d9dad5;
-    background-color: #0f3938;
+    background-color: #198964;
 }
 .in{
     color: #1d3331;
